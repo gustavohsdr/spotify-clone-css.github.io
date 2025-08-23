@@ -1,0 +1,246 @@
+.menu {
+  background-color: black;
+}
+
+img:hover {
+  filter: brightness(0) invert(1);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Bloco 1 -> 4 ~ 17 */
+.menu {
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+  height: 64px;
+  gap: 16px;
+  justify-content: space-between;
+}
+
+.menu__logo img {
+  height: 32px;
+}
+
+/* Bloco 2 */
+.menu__img--svg {
+  width: 25px;
+}
+
+.menu__home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  gap: 8px;
+  width: 100%;
+
+}
+
+
+/* Faz parte do bloco 3 subgrupos tbm */
+.menu__home--animation {
+  border-radius: 50%;
+  background-color: #1f1f1f;
+  width: 48px;
+  height: 48px;
+  border: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__home--animation:hover {
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.menu__search {
+  border: 1px solid transparent;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: #1f1f1f;
+  width: 474px;
+  height: 48px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.menu__search--input {
+  padding: 8px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  width: 100%;
+  font-size: 1rem;
+}
+.menu__search:hover {
+  background: rgba(255, 255, 255, 0.15);
+  opacity: 0.9;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.menu__search::after {
+  content: "Ctrl K";
+  position: absolute;
+  right: 70px;
+  font-size: 12px;
+  color: #b3b3b3;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 2px 6px;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: all 0.3s ease;
+}
+
+.menu__search:hover::after {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.menu__search--input::placeholder {
+  color: #b3b3b3;
+}
+
+.menu__search:focus-within {
+  border: 2px solid #fff;
+}
+
+/* Bloco 3 */
+.menu__img--svginstaller {
+  width: 16px;
+}
+
+.menu__icons--wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 10000;
+  flex-shrink: 1;
+  white-space: nowrap;
+}
+
+.menu__list--stylebutton {
+  background-color: white;
+  border-radius: 30px;
+  padding: 4px 16px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.menu__list--stylebutton:hover {
+  transform: scale(1.03);
+}
+
+.menu__font--black {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #000000;
+  font-weight: bold;
+}
+
+.menu__list--style {
+  display: flex;
+  padding-left: 8px;
+  gap: 20px;
+  white-space: nowrap;
+}
+
+.menu__list--nav {
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+  display: flex;
+  gap: 5px;
+  padding-right: 20px;
+}
+
+.menu__installer--hover:hover {
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.menu__installer--hover:hover a {
+  color: white;
+}
+
+.menu__installer--hover:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.menu__font {
+  font-size: 0.875rem;
+}
+
+.menu__icons {
+  display: flex;
+  gap: 30px;
+}
+
+/* Icones */
+.menu__nav--animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__nav--animation:hover {
+  transform: scale(1.05);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.menu_nav--content::before {
+  content: "";
+  position: absolute;
+  width: 0.5px;
+  height: 26px;
+  background-color: #b3b3b3;
+  z-index: 1;
+  right: 50px;
+  top: 10px;
+}
+
+.menu__notificacao--bg {
+  background-color: transparent;
+  border: transparent;
+  display: flex;
+}
+
+.menu__user--button {
+  border-radius: 50%;
+  background-color: palevioletred;
+  width: 38px;
+  height: 38px;
+  border: transparent;
+  color: white;
+}
+
+.menu__user {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.menu_user--logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1630px) {
+  .menu__home {
+    position: unset;
+    justify-content: unset;
+  }
+}
