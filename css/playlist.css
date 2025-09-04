@@ -1,0 +1,50 @@
+.playlist {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: black; 
+  padding: 10px;
+  gap: 10px;
+}
+
+.playlist__user {
+  background-color: #121212;
+  border-radius: 8px;
+}
+
+.playlist__user--components{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px 8px 20px;
+}
+
+.style__button {
+  display: flex;
+  gap: 10px
+}
+
+.style__button--int button {
+  display: flex;
+  padding: 5px 14px;
+  border-radius: 50px;
+  background-color: #1f1f1f;
+  border: transparent;
+  gap: 5px;
+
+}
+
+.style__button--int button img{
+  width: 20px;
+  height: 20px;
+}
+
+.style__button--int img {
+  width: 20px;
+  height: 20px;
+ 
+}
+
+.bnt__icon--center{
+  display: flex;
+  align-items: center;
+  gap:10px
+}
