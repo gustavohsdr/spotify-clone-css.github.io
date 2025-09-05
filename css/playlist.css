@@ -48,3 +48,47 @@
   align-items: center;
   gap:10px
 }
+
+.btn-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: violet;
+  padding: 12px 15px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #5b00ff, #c3ffe9);
+  width: 60px;
+  height: 60px;
+}
+
+.btn-bg img {
+  width: 25px;
+  height: auto;
+}
+
+.no__space--between{
+  justify-content: flex-start;
+}
+
+.card__style{
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding: 6px 10px;
+}
+
+.img__radius {
+  border-radius: 50%;
+  width: 60px;
+}
+
+/* Não alterar a imagem .img__radius quando o hover for no componente pai */
+.playlist__user--components:hover img:not(.img__radius) {
+    filter: brightness(0) invert(1);
+}
+
+/* Garantir que a imagem .img__radius nunca fique branca */
+.img__radius {
+    filter: none !important;
+    background-color: black; /* ou a cor do card */
+}

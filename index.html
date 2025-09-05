@@ -1,114 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/global.css">
-  <link rel="shortcut icon" href="./assets/favicon/favicon.png" type="image/x-icon">
-  <title>Spotify - Web player: música para todas as pessoas</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="shortcut icon" href="./assets/favicon/favicon.png" type="image/x-icon">
+    <title>Spotify - Web player: música para todas as pessoas</title>
+  </head>
 
-<body>
-  <div class="container-principal">
-    <!-- Bloco pai -->
-    <div class="menu">
-      <!-- Bloco 1  Logo -->
-      <div class="menu__logo">
-        <a href="index.html">
-          <img src="assets/svg/spotify-logo.svg" alt="Spotify" title="Spotify">
-        </a>
-      </div>
-
-      <!-- Bloco 2 Home + Pesquisa + Icones -->
-      <div class="menu__home">
-
-        <button class="menu__home--animation">
-          <img class="menu__img--svg" src="assets/svg/home-spotify.svg" alt="Inicio" title="Início">
-        </button>
-        <div class="menu__search menu_nav--content">
-          <img class="menu__img--svg" src="assets/svg/search-spotify.svg" alt="Pesquisar" title="Buscar">
-          <input class="menu__search--input" size="50" placeholder="O que você quer ouvir?" type="text" name="" id="">
-          <img class="menu__img--svg" src="assets/svg/navegar-spotify.svg" alt="" title="Navegar">
-        </div>
-      </div>
-
-      <!-- Bloco 3 Ver planos premium + Installer + Icones e Logo user-->
-      <div class="menu__icons--wrapper">
-        <div class="menu__list--stylebutton">
-          <a class="menu__font--black" href="">Ver planos Premium</a>
+  <body>
+    <div class="container-principal">
+      <!-- Bloco pai -->
+      <div class="menu">
+        <!-- Bloco 1  Logo -->
+        <div class="menu__logo">
+          <a href="index.html">
+            <img src="assets/svg/spotify-logo.svg" alt="Spotify" title="Spotify">
+          </a>
         </div>
 
-        <div class=" menu__list--nav menu__installer--hover">
+        <!-- Bloco 2 Home + Pesquisa + Icones -->
+        <div class="menu__home">
+
+          <button class="menu__home--animation">
+            <img class="menu__img--svg" src="assets/svg/home-spotify.svg" alt="Inicio" title="Início">
+          </button>
+          <div class="menu__search menu_nav--content">
+            <img class="menu__img--svg" src="assets/svg/search-spotify.svg" alt="Pesquisar" title="Buscar">
+            <input class="menu__search--input" size="50" placeholder="O que você quer ouvir?" type="text" name="" id="">
+            <img class="menu__img--svg" src="assets/svg/navegar-spotify.svg" alt="" title="Navegar">
+          </div>
+        </div>
+
+        <!-- Bloco 3 Ver planos premium + Installer + Icones e Logo user-->
+        <div class="menu__icons--wrapper">
+          <div class="menu__list--stylebutton">
+            <a class="menu__font--black" href="">Ver planos Premium</a>
+          </div>
+
+          <div class=" menu__list--nav menu__installer--hover">
             <img class="menu__img--svginstaller" src="./assets/svg/download-spotify.svg" alt="Instale o spotify">
             <a class="menu__font" href="">Instalar aplicativo</a>
-        </div>
-
-        <div class="menu__icons">
-          <button class="menu__notificacao--bg menu__nav--animation"><img class="menu__img--svginstaller" src="assets/svg/notificacao-spotify.svg" alt="" title="Notificações"></button>
-          <button class="menu__notificacao--bg menu__nav--animation"><img class="menu__img--svginstaller" src="assets/svg/atividade-amigo-spotify.svg" alt="" title="Atividade de amigos "></button>
-          <div class="menu__home--animation  menu_user--logo">
-            <button class="menu__user--button" title="Gustavo"> G
-            </button>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Apartir daqui é o bloco abaixo do sidebar -->
-    <div class="playlist">
-      <div class="playlist__user">
-        <div class="playlist__user--components">
-          <div>
-            <p>Sua Biblioteca</p>
-          </div>
-          <div class="style__button style__button--int">
-            <div class="bnt__icon--center">
-              <button> <img src="assets/svg/add-spotify.svg" alt=""> Criar</button>
-              <img src="assets/svg/expand-playlist.svg" alt="">
+          <div class="menu__icons">
+            <button class="menu__notificacao--bg menu__nav--animation"><img class="menu__img--svginstaller" src="assets/svg/notificacao-spotify.svg" alt="" title="Notificações"></button>
+            <button class="menu__notificacao--bg menu__nav--animation"><img class="menu__img--svginstaller" src="assets/svg/atividade-amigo-spotify.svg" alt="" title="Atividade de amigos "></button>
+            <div class="menu__home--animation  menu_user--logo">
+              <button class="menu__user--button" title="Gustavo"> G
+              </button>
             </div>
           </div>
         </div>
-        <!-- Linha 2 -->
-        <div class="playlist__user--components">
-          <div class="style__button style__button--int">
-            <button>playlist</button>
-            <button>artista</button>
-          </div>
-        </div>
-        <!-- Linha 3 -->
-        <div>
-          <div class="playlist__user--components style__button style__button--int">
-            <div class="bnt__icon--center">
-              <img src="assets/svg/search-spotify.svg" alt="">
+      </div>
+
+      <!-- Apartir daqui é o bloco abaixo do sidebar -->
+      <div class="playlist">
+        <div class="playlist__user">
+          <div class="playlist__user--components">
+            <div>
+              <p>Sua Biblioteca</p>
             </div>
-            <p class="bnt__icon--center">Recentes<img src="assets/svg/menu-hamburguer.svg" alt=""></p>
+            <div class="style__button style__button--int">
+              <div class="bnt__icon--center">
+                <button> <img src="assets/svg/add-spotify.svg" alt=""> Criar</button>
+                <img src="assets/svg/expand-playlist.svg" alt="">
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Coluna 2 -->
-      <div class="playlist__user">
-        <div class="playlist__user--components">
-          <div class="style__button style__button--int">
-            <button>Tudo</button>
-            <button>Músicas</button>
-            <button>Podcasts</button>
+          <!-- Linha 2 -->
+          <div class="playlist__user--components">
+            <div class="style__button style__button--int">
+              <button>playlist</button>
+              <button>artista</button>
+            </div>
           </div>
-<!-- linha 2 -->
-        </div>
-        <div class="playlist__user--components">
+          <!-- Linha 3 -->
           <div>
-          <p>Feito para</p>
-          <h3>Gustavo Henrique</h3>
+            <div class="playlist__user--components style__button style__button--int">
+              <div class="bnt__icon--center">
+                <img src="assets/svg/search-spotify.svg" alt="">
+              </div>
+              <p class="bnt__icon--center">Recentes<img src="assets/svg/menu-hamburguer.svg" alt=""></p>
+            </div>
+          </div>
+          <!-- Cards -->
+          <div>
+            <div>
+              <div class="playlist__user--components no__space--between">
+                <div class="btn-bg ">
+                  <img src="./assets/svg/like-spotify.svg" alt="">
+                </div>
+                <div class="card__style">
+                  <span>Músicas Curtidas</span>
+                  <p>Playlist 46 Músicas</p>
+                </div>
+              </div>
+
+              <div class="playlist__user--components no__space--between">
+                <div class="">
+                  <img class="img__radius" src="./assets/lib/ab67616d000011eb24e3160c5ed754f194d39bbc.webp" alt="">
+                </div>
+                <div class="card__style">
+                  <span>ALMA MUSIC</span>
+                  <p>Artista</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Coluna 2 -->
+        <div class="playlist__user">
+          <div class="playlist__user--components">
+            <div class="style__button style__button--int">
+              <button>Tudo</button>
+              <button>Músicas</button>
+              <button>Podcasts</button>
+            </div>
+            <!-- linha 2 -->
+          </div>
+          <div class="playlist__user--components">
+            <div>
+              <p>Feito para</p>
+              <h3>Gustavo Henrique</h3>
+            </div>
+          </div>
         </div>
+
+
       </div>
-
-      
     </div>
-  </div>
 
-</body>
+  </body>
 
-</html>
+  </html>
