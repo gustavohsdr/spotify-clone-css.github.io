@@ -2,7 +2,7 @@
   background-color: black;
 }
 
-img:hover {
+.icon__svg:hover {
   filter: brightness(0) invert(1);
 }
 

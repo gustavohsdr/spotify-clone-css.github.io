@@ -81,14 +81,3 @@
   border-radius: 50%;
   width: 60px;
 }
-
-/* Não alterar a imagem .img__radius quando o hover for no componente pai */
-.playlist__user--components:hover img:not(.img__radius) {
-    filter: brightness(0) invert(1);
-}
-
-/* Garantir que a imagem .img__radius nunca fique branca */
-.img__radius {
-    filter: none !important;
-    background-color: black; /* ou a cor do card */
-}
